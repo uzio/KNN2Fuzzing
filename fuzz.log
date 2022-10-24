@@ -1,0 +1,350 @@
+[2021-02-02 21:47:32,629] [INFO] [runner.main] -> 获取用例: 11
+[2021-02-02 21:47:33,002] [ERROR] [runner.main] -> 执行用例:TCP协议check sum字段风暴测试-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 88, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/tcp/tcp2.py", line 42, in fuzz
+    fuzzer.set_target(target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/icdm/Fuzz/pcap/601957780145ea0b44a8d851'
+[2021-02-19 14:26:26,112] [INFO] [runner.main] -> 获取用例: 1
+[2021-02-19 14:26:26,433] [ERROR] [runner.main] -> 执行用例:TCP协议check sum字段风暴测试-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/tcp/tcp2.py", line 42, in fuzz
+    fuzzer.set_target(target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/602f5a0aebd3f1c604cc4ae1'
+[2021-02-19 14:28:52,925] [INFO] [runner.main] -> 获取用例: 1
+[2021-02-19 14:28:53,117] [ERROR] [runner.main] -> 执行用例:TCP协议check sum字段风暴测试-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/tcp/tcp2.py", line 42, in fuzz
+    fuzzer.set_target(target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/602f5a9d4b29a44049aff421'
+[2021-02-19 14:39:34,091] [INFO] [runner.main] -> 获取用例: 1
+[2021-02-19 14:39:34,287] [ERROR] [runner.main] -> 执行用例:TCP协议check sum字段风暴测试-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/tcp/tcp2.py", line 42, in fuzz
+    fuzzer.set_target(target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/602f5d18634c7b31bbdf21dc'
+[2021-03-01 17:47:33,603] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-01 17:47:33,945] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens14.py", line 67, in fuzz
+    fuzzer.set_target(s7comm_target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/603cb781f757f1424edfd2ad'
+[2021-03-23 21:52:04,016] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-23 21:52:04,309] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens14.py", line 67, in fuzz
+    fuzzer.set_target(s7comm_target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/6059f26aeb2bce0b8d54f300'
+[2021-03-29 20:34:23,682] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:34:24,034] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 85, in run
+    params['INTERFACE'] = config['monitor_iface']  # Todo
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'monitor_iface' in section: 'DEFAULT'
+[2021-03-29 20:35:01,111] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:35:01,113] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 85, in run
+    params['INTERFACE'] = config['monitor_iface']  # Todo
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'monitor_iface' in section: 'DEFAULT'
+[2021-03-29 20:39:25,690] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:39:25,691] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 85, in run
+    params['INTERFACE'] = config['monitor_iface']  # Todo
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'monitor_iface' in section: 'DEFAULT'
+[2021-03-29 20:42:27,090] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:42:27,096] [ERROR] [runner.main] -> 执行用例:TCP协议check sum字段风暴测试-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 85, in run
+    params['INTERFACE'] = config['monitor_iface']  # Todo
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'monitor_iface' in section: 'DEFAULT'
+[2021-03-29 20:47:59,516] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:47:59,816] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 70, in fuzz
+    fuzzer.set_target(s7comm_target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/6061cc709ccfc5ed35562dd7'
+[2021-03-29 20:52:23,874] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:52:24,127] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 84, in run
+    params['INTERFACE'] = config['Intel Corporation Device 34f0']  # 适配本机网卡
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'intel corporation device 34f0' in section: 'DEFAULT'
+[2021-03-29 20:55:15,630] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:55:15,877] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 84, in run
+    params['INTERFACE'] = config['Intel Corporation Device 34f0']  # 适配本机网卡
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'intel corporation device 34f0' in section: 'DEFAULT'
+[2021-03-29 20:56:24,034] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:56:24,035] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 84, in run
+    # params['INTERFACE'] = config['Intel Corporation Device 34f0']  # 适配本机网卡
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'intel corporation device 34f0' in section: 'DEFAULT'
+[2021-03-29 20:56:47,083] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:56:47,084] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 84, in run
+    # params['INTERFACE'] = config['Intel Corporation Device 34f0']  # 适配本机网卡
+  File "/home/uzio/APPs/Fuzz-master/utils/config.py", line 23, in __getitem__
+    return self._conf.get(self._section, item)
+  File "/usr/lib/python2.7/ConfigParser.py", line 618, in get
+    raise NoOptionError(option, section)
+NoOptionError: No option 'intel corporation device 34f0' in section: 'DEFAULT'
+[2021-03-29 20:58:50,400] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 20:58:50,690] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 70, in fuzz
+    fuzzer.set_target(s7comm_target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/6061cefc4d8a03678282c53b'
+[2021-03-29 21:00:46,733] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 21:00:46,981] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 70, in fuzz
+    fuzzer.set_target(s7comm_target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/6061cf6e4d8a03678282c664'
+[2021-03-29 21:14:31,588] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 21:14:31,830] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 89, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 70, in fuzz
+    fuzzer.set_target(s7comm_target)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 348, in set_target
+    os.mkdir(pcap_path)
+OSError: [Errno 2] No such file or directory: '/home/uzio/APPs/Fuzz-master/pcap/6061d2989a54cb2d2e1d1ca2'
+[2021-03-29 21:18:48,407] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 21:22:44,199] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-29 21:41:01,689] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-30 14:04:41,572] [INFO] [runner.main] -> 获取用例: 1
+[2021-03-30 14:19:10,640] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 14:20:14,512] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 14:21:23,164] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 14:21:52,635] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 14:58:55,647] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 17:14:06,158] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 17:48:01,929] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 17:49:34,182] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 17:51:46,781] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 18:07:59,824] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 18:18:34,283] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 20:02:27,353] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 20:03:37,825] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 20:07:47,179] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 20:16:53,852] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 20:56:47,800] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 20:58:50,419] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:21:24,480] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:24:11,068] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:43:17,332] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:52:23,290] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:54:46,902] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:56:03,624] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:57:17,095] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 21:58:13,785] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-30 22:04:30,762] [INFO] [runner.main] -> 获取用例: 5
+[2021-03-30 22:05:33,428] [INFO] [runner.main] -> 获取用例: 5
+[2021-03-30 22:05:59,543] [INFO] [runner.main] -> 获取用例: 5
+[2021-03-30 22:05:59,788] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 79, in run
+    module = __import__(case_specify['module_name'])
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 9, in <module>
+    from katnip.targets.tcp import TcpTarget
+  File "/home/uzio/APPs/Fuzz-master/katnip/targets/tcp.py", line 59
+    self.logger.info('>>>>%s>>>>%s'%self.host,%self.port)
+                                              ^
+SyntaxError: invalid syntax
+[2021-03-30 22:06:49,761] [INFO] [runner.main] -> 获取用例: 5
+[2021-03-30 22:07:44,330] [INFO] [runner.main] -> 获取用例: 5
+[2021-03-30 22:12:32,765] [INFO] [runner.main] -> 获取用例: 5
+[2021-03-30 22:12:36,254] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 88, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 72, in fuzz
+    fuzzer.start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 435, in start
+    self._start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 328, in _start
+    job['status'] = JobStatus.VULN
+UnboundLocalError: local variable 'job' referenced before assignment
+[2021-03-31 12:37:15,616] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-31 12:37:19,054] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 88, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 72, in fuzz
+    fuzzer.start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 435, in start
+    self._start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 328, in _start
+    job['status'] = JobStatus.VULN
+UnboundLocalError: local variable 'job' referenced before assignment
+[2021-03-31 15:48:11,747] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-31 15:48:17,887] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 88, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 72, in fuzz
+    fuzzer.start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 435, in start
+    self._start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 328, in _start
+    job['status'] = JobStatus.VULN
+UnboundLocalError: local variable 'job' referenced before assignment
+[2021-03-31 16:49:54,121] [INFO] [runner.main] -> 获取用例: 55
+[2021-03-31 16:50:08,398] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 88, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 72, in fuzz
+    fuzzer.start()
+  File "ics_fuzzer.py", line 435, in start
+    self._start()
+  File "ics_fuzzer.py", line 328, in _start
+    job['status'] = JobStatus.VULN
+UnboundLocalError: local variable 'job' referenced before assignment
+[2021-04-01 15:13:27,395] [INFO] [runner.main] -> 获取用例: 55
+[2021-04-01 15:13:30,912] [ERROR] [runner.main] -> 执行用例:Data Read时，模糊 Parameter中 Item部分 Variable Specification-错误
+Traceback (most recent call last):
+  File "runner.py", line 51, in main
+    runner.run()
+  File "runner.py", line 88, in run
+    module.fuzz(params)
+  File "/home/uzio/APPs/Fuzz-master/cases/siemens/siemens15.py", line 72, in fuzz
+    fuzzer.start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 435, in start
+    self._start()
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 328, in _start
+    job['status'] = JobStatus.VULN
+UnboundLocalError: local variable 'job' referenced before assignment
+[2021-04-15 16:23:40,732] [INFO] [runner.main] -> 获取用例: 56
+[2021-04-15 16:26:10,138] [INFO] [runner.main] -> 获取用例: 56
+[2021-04-15 16:27:25,379] [INFO] [runner.main] -> 获取用例: 57
+[2021-04-15 16:28:10,399] [INFO] [runner.main] -> 获取用例: 57
+[2021-05-13 21:27:56,893] [INFO] [runner.main] -> 获取用例: wirte test
+[2021-05-13 21:30:25,081] [INFO] [runner.main] -> 获取用例: write_test
+[2021-05-13 21:38:29,706] [INFO] [runner.main] -> 获取用例: wr41
+[2021-05-13 21:42:28,918] [INFO] [runner.main] -> 获取用例: wr41
+[2021-05-13 21:46:37,464] [INFO] [runner.main] -> 获取用例: wr41
+[2021-06-01 14:20:38,975] [INFO] [runner.main] -> 获取用例: ip
+[2021-06-01 14:42:31,804] [INFO] [runner.main] -> 获取用例: http://www.cplifevip.com/
+[2021-06-01 14:47:31,796] [INFO] [runner.main] -> 获取用例: m.aliyun.com
+[2021-06-01 14:48:51,104] [INFO] [runner.main] -> 获取用例: m.aliyun.com
+[2021-06-01 14:51:25,523] [INFO] [runner.main] -> 获取用例: m.aliyun.com
+[2021-06-01 14:55:34,164] [INFO] [runner.main] -> 获取用例: aTCP
+[2021-06-01 16:53:57,413] [INFO] [runner.main] -> 获取用例: aTCP
+[2021-06-01 17:01:58,425] [INFO] [runner.main] -> 获取用例: arp
+[2021-06-01 17:03:08,057] [INFO] [runner.main] -> 获取用例: arp

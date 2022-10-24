@@ -1,0 +1,83 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "a frontend to fuzz",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.dev.js --color",
+    "build": "webpack --config webpack.config.prod.js --color --progress",
+    "test": "jest",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
+  },
+  "author": "ss",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/runtime": "^7.4.2",
+    "axios": "^0.18.0",
+    "echarts": "^4.2.1",
+    "element-ui": "^2.6.1",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.24.0",
+    "nprogress": "^0.2.0",
+    "sass-resources-loader": "^2.0.0",
+    "vue": "^2.6.9",
+    "vue-canvas-nest": "^2.0.0",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.1",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.5.0",
+    "jest-serializer-vue": "^2.0.2",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "svg-sprite-loader": "^4.1.3",
+    "url-loader": "^1.1.2",
+    "vue-jest": "^3.0.4",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.9",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1",
+    "webpackbar": "^3.1.5"
+  }
+}

@@ -1,0 +1,38 @@
+version: '3'
+services:
+
+  fuzz:
+    image: fuzz
+    build: 
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - .:/fuzz
+    links:
+      - mongodb:mongodb
+    ports:
+      - 5000:5000
+
+  ics-redis:
+    image: "redis:alpine"
+    ports:
+      - "0.0.0.0:6379:6379"
+  
+  mongodb:
+    image: "mongo:latest"
+    ports:
+      - "0.0.0.0:27017:27017"
+    volumes: 
+      - /data/db:/data/db
+
+
+  scan_worker:
+    image: fuzz
+    volumes:
+      - .:/fuzz
+    command: rq worker --url redis://ics-redis:6379 scan
+    links:
+      - mongodb:mongodb
+    depends_on:
+      - ics-redis
+      - mongodb

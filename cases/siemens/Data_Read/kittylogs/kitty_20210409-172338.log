@@ -1,0 +1,36 @@
+[2021-04-09 17:23:38,306] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: EmptyInterface
+                 Log: ./kittylogs/kitty_20210409-172338.log
+
+                 Total possible mutation count: 2
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-04-09 17:23:38,313] [INFO] [ics_fuzzer.start] -> Skipping environment test
+[2021-04-09 17:23:38,321] [INFO] [ics_fuzzer._start] -> should keep running? True
+[2021-04-09 17:23:38,756] [INFO] [tcp.pre_test] -> host>>>>10.150.203.90
+[2021-04-09 17:23:38,769] [INFO] [tcp.pre_test] -> port>>>>102
+[2021-04-09 17:23:38,782] [INFO] [base._test_info] -> Current test: 0
+[2021-04-09 17:23:38,786] [ERROR] [ics_fuzzer._start] -> Error occurred while fuzzing: AttributeError("'Template' object has no attribute 'multiple'",)
+[2021-04-09 17:23:38,795] [ERROR] [ics_fuzzer._start] -> Traceback (most recent call last):
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 316, in _start
+    self._run_sequence(sequence)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 368, in _run_sequence
+    resp = self._transmit(node)
+  File "/home/uzio/APPs/Fuzz-master/ics_fuzzer.py", line 379, in _transmit
+    multiple = node.multiple  # multiple表示当前测试报文会被重复几次
+AttributeError: 'Template' object has no attribute 'multiple'
+
+[2021-04-09 17:23:38,804] [INFO] [base._end_message] -> 
+                         --------------------------------------------------
+                         Finished fuzzing session
+                         Target: TcpTarget
+
+                         Tested 1 mutation
+                         Failure count: 0
+                         --------------------------------------------------
+            

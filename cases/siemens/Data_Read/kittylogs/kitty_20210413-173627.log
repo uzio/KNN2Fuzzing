@@ -1,0 +1,24 @@
+[2021-04-13 17:36:27,497] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: EmptyInterface
+                 Log: ./kittylogs/kitty_20210413-173627.log
+
+                 Total possible mutation count: 2
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-04-13 17:36:27,512] [INFO] [ics_fuzzer.start] -> Skipping environment test
+[2021-04-13 17:36:27,518] [INFO] [ics_fuzzer._start] -> should keep running? True
+[2021-04-13 17:36:27,856] [INFO] [tcp.pre_test] -> host>>>>10.150.203.90
+[2021-04-13 17:36:27,872] [INFO] [tcp.pre_test] -> port>>>>102
+[2021-04-13 17:36:30,008] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "/home/uzio/APPs/Fuzz-master/katnip/targets/tcp.py", line 61, in pre_test
+    sock.connect((self.host, self.port))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[2021-04-13 17:36:30,022] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
